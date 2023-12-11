@@ -1,6 +1,5 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -66,7 +65,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Work = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -96,4 +95,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Work, "projects");

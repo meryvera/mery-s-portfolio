@@ -31,13 +31,17 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "technologies",
+    title: "Technologies",
   },
+  // {
+  //   id: "contact",
+  //   title: "Contact",
+  // },
 ];
 
 const services = [

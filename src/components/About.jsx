@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -42,7 +43,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
         {/* leading-[30px]: Esta clase define la altura de línea (line-height) del texto */}
         I'm a skilled software developer with experience in TypeScript and
@@ -61,4 +62,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about");

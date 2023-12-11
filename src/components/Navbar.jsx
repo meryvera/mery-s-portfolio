@@ -8,9 +8,9 @@ import { logo_2, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  console.log('navLinkssss', navLinks)
   return (
     <nav className={`${styles.paddingX} w-full flex justify-between items-center py-5 sticky top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}>
       <Link
@@ -29,20 +29,21 @@ const Navbar = () => {
       </Link>
 
       <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => {
-            return (
-              <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-            )
-          })}
-        </ul>
+        {navLinks.map((nav) => {
+          return (
+            <li
+            key={nav.id}
+            className={`${
+              active === nav.title ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            onClick={() => setActive(nav.title)
+            }
+          >
+            <a href={`#${nav.id}`}>{nav.title}</a>
+          </li>
+          )
+        })}
+      </ul>
     </nav>
   )
 }
