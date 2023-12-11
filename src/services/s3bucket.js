@@ -13,7 +13,7 @@ const params = {
   Key: 'Resume - Mery Vera M.pdf' 
 };
 
-export const url = await s3bucket
+export const url = s3bucket
   .getSignedUrlPromise('getObject', params)
   .catch((err) => {
     console.error(err);
