@@ -8,21 +8,22 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  carrentok,
+  jobitok,
+  tripguideok,
+  aws,
+  node,
+  emberjs,
+  postgres,
+  ror,
+  chrome,
 } from "../assets";
 
 export const navLinks = [
@@ -46,19 +47,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
+    title: "Data enthusiastic",
     icon: creator,
   },
 ];
@@ -85,24 +82,28 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Ember JS",
+    icon: emberjs,
+  },
+  {
+    name: "Ruby on rails",
+    icon: ror,
+  },
+  {
+    name: "AWS services",
+    icon: aws,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+  },
+  {
+    name: "Node Express JS",
+    icon: node,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -112,10 +113,22 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -202,37 +215,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Burger Queen",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Burger Queen is a React web app that works as a restaurant ordering system with firebase´s database.",
     tags: [
       {
-        name: "react",
+        name: "react js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
@@ -240,29 +232,53 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: tripguideok,
+    source_code_link: "https://github.com/meryvera/LIM014-burger-queen",
+    source_site_link: "https://lim014-burgerqueen.web.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Youtube Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Youtube clone is a vite react web app that works as a video player with features similar to youtube .",
     tags: [
       {
-        name: "nextjs",
+        name: "react js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: jobitok,
+    source_code_link: "https://github.com/meryvera/youtube_clone",
+    source_site_link: "https://meryvera.github.io/youtube_clone/",
+  },
+  {
+    name: "Moon bot",
+    description:
+      "A web app and ackend server that works as a AI chat that provides information about the documents contained in clickup saas",
+    tags: [
+      {
+        name: "react js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Open AI api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrentok,
+    source_code_link: "https://github.com/moonshot-partners/clickup-ai-backend/tree/master",
+    source_site_link: "https://main.d1lsn4wgltti5t.amplifyapp.com/",
   },
 ];
 

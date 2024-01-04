@@ -10,7 +10,7 @@ const s3bucket = new AWS.S3({
 const params = {
   Bucket: import.meta.env.VITE_AWS_BUCKET_NAME,
   Expires: 3000,
-  Key: 'Resume - Mery Vera M.pdf' 
+  Key: 'Resume-Mery_Vera.pdf' 
 };
 
 export const url = s3bucket

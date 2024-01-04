@@ -131,6 +131,12 @@
   transform: translateZ(0);
 }
 
+@layer utilities {
+  .flip-horizontal {
+    @apply transform scale-x-[-1];
+  }
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
