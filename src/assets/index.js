@@ -1,5 +1,6 @@
 import logo_2 from "./logo_2.svg";
 import logo from "./logo.png";
+import logo1 from "./logo1.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -44,6 +45,7 @@ import jobitok from "./jobitok.png";
 export {
   logo,
   logo_2,
+  logo1,
   merybg,
   backend,
   creator,
